@@ -20,7 +20,7 @@
         var futureAgeB = futureAge --;
         var myAges = "I will either be " + futureAge + " or" + " " + futureAgeB + " years" + ".";
 
-        console.log(myAges)
+        console.log(myAges);
 
         // the lifetime Supply calculator 
 
@@ -214,8 +214,7 @@ Calculate the area based on the radius, and output "The area is NN".*/
 
 
             function calcCircumfrence(radius) {
-                var mathPie = 3.14;
-                var circumfrence = mathPie * (2 * radius);
+                var circumfrence = Math.PI * (2 * radius);
 
                 console.log("The Circumfrence is " + cirmfrence);
             }
@@ -223,13 +222,35 @@ Calculate the area based on the radius, and output "The area is NN".*/
             calcCircumfrence(5);
             
             function calcArea(radius) {
-                var mathPie = 3.14;
-                var area = mathpie * (radius**2); 
+                var area = Math.PI * (radius **2); 
 
                 console.log (" The Area is " + area)
             }
 
             calcArea(5);
+
+            function calcGeometry(radius) {
+                var circumfrence =  Math.PI * 2*radius;
+                console.log("The circumfence is " + circumfrence);
+
+                var area = Math.PI * (radius ** 2);
+                console.log("The area is " + area);
+            }
+
+            calcGeometry(30);
+
+            function celsiusToFahrenheit(celsius) {
+                var fahrenheit = (celsius / 5) * 9 + 32;
+                console.log(celsius + "°c " + "is " + fahrenheit + "°F");
+            }
+
+            function fahrenheitToCelsius(fahrenheit) {
+                var celsius = (fahrenheit - 32) * 32 / 9;
+                console.log( fahrenheit + "°F " + "is " + celsius + "°c");
+            }
+
+            celsiusToFahrenheit(32);
+            fahrenheitToCelsius(100);
 
     </script>
 </body>
