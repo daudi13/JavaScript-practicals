@@ -101,6 +101,32 @@
 
         addNumbers(10, 13);
         console.log(addNumbers(10, 13));
+
+        // using function calls in expressions 
+
+        var biggerSum = addNumbers(10, 13) + addNumbers(22, 40);
+        console.log(biggerSum);
+
+        // function scope
+        // #1 local scope
+
+        function addDigits(num1, num2) {
+            var localScope = num1 + num2;
+            return localScope; //this is the local scope
+        }
+
+        console.log(addDigits(20, 30));
+
+        // ##the global scope 
+
+        var globalScope;
+
+        function addDigits(num1, num2){
+            globalScope = num1 + num2;
+            console.log(globalScope);
+        }
+
+        addDigits(20, 30);
     </script>
 </body>
 
