@@ -333,7 +333,38 @@ Bonus: Make it handle a few collective nouns like "sheep" and "geese".*/
                 }
             }
 
-            console.log(pluralize(noun, 1))
+            console.log(pluralize(noun, 1));
+
+            // the calculator function 
+
+            function squareNumber(number) {
+                var square = number ** 2;
+                console.log(square);
+            }
+
+            function halfNumber(number) {
+                var result = number /2;
+                console.log(result)
+            }
+
+            halfNumber(3)
+
+            function percentOf(number1, number2) {
+                var result = (number1 /number2) * 100;
+
+                console.log(number1 + " is" + " " + result + "%" + " of" + number2);
+            }
+
+            percentOf(20, 1000);
+
+            function areaOfCircle(radius) {
+                var area = Math.PI * radius ** 2
+
+                console.log("The area for a circle with " +  " radius" + " "+radius + " is " + area)
+            }
+
+            areaOfCircle(2);
+
 
 
     </script>
