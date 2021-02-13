@@ -396,6 +396,8 @@ Bonus: Make it handle a few collective nouns like "sheep" and "geese".*/
 
                 drEvil(100000);
 
+                /*Create a function called mixUp. It should take in two strings, and return the concatenation of the two strings (separated by a space) slicing out and swapping the first 2 characters of each. You can assume that the strings are at least 2 characters long*/
+
                 function mixUp(str1, str2) {
                     var res1 = str2.substring(0, 2);
                     var res2 = str1.substring(0, 2);
@@ -405,7 +407,30 @@ Bonus: Make it handle a few collective nouns like "sheep" and "geese".*/
                 }
 
                 mixUp("mop", "lex")
-            
+
+
+                /* Create a function called fixStart. It should take a single argument, a string, and return a version where all occurences of its first character have been replaced with '*', except for the first character itself. You can assume that the string is at least one character long.*/ 
+
+                function fixStart(str) {
+                    var c = str.charAt(0);
+                    return c + str.slice(1).replace(new RegExp(c, 'g'), '*');
+                }
+
+                console.log(fixStart("shit"));//wrong function..
+
+                function verbing(strn) {
+                    if(strn.length < 3) {
+                        return strn;
+
+                    } else if(strn.slice(-3) == "ing") {
+                        return strn + "ly";
+                    } else {
+                        return strn + "ing"
+                    } 
+                }
+
+                console.log(verbing("twerk"))
+                
     </script>
 </body>
 
