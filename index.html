@@ -336,15 +336,18 @@ Bonus: Make it handle a few collective nouns like "sheep" and "geese".*/
             console.log(pluralize(noun, 1));
 
             // the calculator function 
+            // part 1
 
             function squareNumber(number) {
                 var square = number ** 2;
-                console.log(square);
+                console.log("The result of squaring the number " + number + " is" + " " + square);
+                return square;
             }
 
             function halfNumber(number) {
                 var result = number /2;
-                console.log(result)
+                console.log(result);
+                return result;
             }
 
             halfNumber(3)
@@ -352,21 +355,35 @@ Bonus: Make it handle a few collective nouns like "sheep" and "geese".*/
             function percentOf(number1, number2) {
                 var result = (number1 /number2) * 100;
 
-                console.log(number1 + " is" + " " + result + "%" + " of" + number2);
+                console.log(number1 + " is" + " " + result + "%" + " of " + number2);
+                return result;
             }
 
             percentOf(20, 1000);
 
             function areaOfCircle(radius) {
-                var area = Math.PI * radius ** 2
+                var area = Math.PI * radius ** 2;
 
-                console.log("The area for a circle with " +  " radius" + " "+radius + " is " + area)
+                console.log("The area for a circle with " +  " radius" + " "+radius + " is " + area);
+                return area;
             }
 
             areaOfCircle(2);
 
+            // ##part 2 
+
+            function calc(number) {
+                var half = halfNumber(number);
+                var squared = squareNumber(half);
+                var area = areaOfCircle(squared);
+                var percentage = percentOf(squared, area);
+            }
+
+            calc(5)
 
 
+            // tryout
+            
     </script>
 </body>
 
