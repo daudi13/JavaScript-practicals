@@ -471,6 +471,25 @@ If it doesn't find 'not' and 'bad' in the right sequence (or at all), just retur
 
                 calculateArea(4, 5);
                 console.log(calculateArea(5, 5));
+
+                // arrow function 
+
+                // functions that take only a single parameter do not need that parameter to be  enclosed in paratheses. however if a functions takes zero or multiple parameters, parantheses are needed
+
+                // A function body is composed of a single line block does not need curly braces. without the curly braces whatever that line evealutes will be automatically returned. the content of the block should immediately follow the arrow  => and the return keyword can be removed. this is called implicit return
+
+                const boxArea = (width, length) => {
+                    let area = width * length;
+                    return area
+                }
+
+                console.log(boxArea(23, 20))
+
+                // consise arrow functions 
+
+                const bopArea = (width, length) => width * length;
+
+                console.log(bopArea(3, 15))
     </script>
 </body>
 
