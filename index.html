@@ -451,6 +451,17 @@ If it doesn't find 'not' and 'bad' in the right sequence (or at all), just retur
 
                 // console.log(notBad("this dinner is not that bad"))
 
+                // helper functions 
+
+                function multiplyByNineFifth (number) {
+                    return number * 9/5; }
+
+                    function getFahrenheit (celcius) {
+                        return multiplyByNineFifth(celcius) + 32;
+                    }
+
+                console.log(getFahrenheit(15));
+
                 // function expression 
 
                 const calculateArea = function (width, length) {
