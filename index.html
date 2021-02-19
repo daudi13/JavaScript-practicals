@@ -460,7 +460,7 @@ If it doesn't find 'not' and 'bad' in the right sequence (or at all), just retur
                         return multiplyByNineFifth(celcius) + 32;
                     }
 
-                console.log(getFahrenheit(15));
+                console.log(getFahrenheit(15)); //output 59
 
                 // function expression 
 
@@ -470,7 +470,7 @@ If it doesn't find 'not' and 'bad' in the right sequence (or at all), just retur
                 }
 
                 calculateArea(4, 5);
-                console.log(calculateArea(5, 5));
+                console.log(calculateArea(5, 5)); //out5ut 24
 
                 // arrow function 
 
@@ -483,13 +483,24 @@ If it doesn't find 'not' and 'bad' in the right sequence (or at all), just retur
                     return area
                 }
 
-                console.log(boxArea(23, 20))
+                console.log(boxArea(23, 20)) //output 460
 
                 // consise arrow functions 
 
                 const bopArea = (width, length) => width * length;
 
-                console.log(bopArea(3, 15))
+                console.log(bopArea(3, 15)) //output: 45
+
+                // global scope
+                const satellite = 'The Moon';
+                    const galaxy = 'The Milky Way';
+                    const stars = 'North Star';
+
+                    function callMyNightSky() {
+                        return 'Night Sky: ' + satellite + ', ' + stars + ', and ' + galaxy;
+                    }
+
+                    console.log(callMyNightSky());//output Night Sky: The Moon, North Star, and The Milky Way
     </script>
 </body>
 
