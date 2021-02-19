@@ -500,7 +500,16 @@ If it doesn't find 'not' and 'bad' in the right sequence (or at all), just retur
                         return 'Night Sky: ' + satellite + ', ' + stars + ', and ' + galaxy;
                     }
 
-                    console.log(callMyNightSky());//output Night Sky: The Moon, North Star, and The Milky Way
+                    console.log(callMyNightSky());//Output: Night Sky: The Moon, North Star, and The Milky Way
+
+                //block scope 
+                const logVisibleLightWaves = () => {
+                        const lightWaves = 'Moonlight'
+                        console.log(lightWaves);
+                    }
+
+                    logVisibleLightWaves(); //Output: Moonlight
+                    console.log(lightWaves);// Output: referenceError
     </script>
 </body>
 
