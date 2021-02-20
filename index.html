@@ -492,24 +492,24 @@ If it doesn't find 'not' and 'bad' in the right sequence (or at all), just retur
                 console.log(bopArea(3, 15)) //output: 45
 
                 // global scope
-                const satellite = 'The Moon';
-                    const galaxy = 'The Milky Way';
-                    const stars = 'North Star';
+                // const satellite = 'The Moon';
+                //     const galaxy = 'The Milky Way';
+                //     const stars = 'North Star';
 
-                    function callMyNightSky() {
-                        return 'Night Sky: ' + satellite + ', ' + stars + ', and ' + galaxy;
-                    }
+                //     function callMyNightSky() {
+                //         return 'Night Sky: ' + satellite + ', ' + stars + ', and ' + galaxy;
+                //     }
 
-                    console.log(callMyNightSky());//Output: Night Sky: The Moon, North Star, and The Milky Way
+                //     console.log(callMyNightSky());//Output: Night Sky: The Moon, North Star, and The Milky Way
 
-                //block scope 
-                const logVisibleLightWaves = () => {
-                        const lightWaves = 'Moonlight'
-                        console.log(lightWaves);
-                    }
+                // //block scope 
+                // const logVisibleLightWaves = () => {
+                //         const lightWaves = 'Moonlight'
+                //         console.log(lightWaves);
+                //     }
 
-                    logVisibleLightWaves(); //Output: Moonlight
-                    console.log(lightWaves);// Output: referenceError
+                //     logVisibleLightWaves(); //Output: Moonlight
+                //     console.log(lightWaves);// Output: referenceError
 
                 //scope polluion 
                 const satellite = 'The Moon';
@@ -523,6 +523,30 @@ If it doesn't find 'not' and 'bad' in the right sequence (or at all), just retur
 
                     console.log(callMyNightSky()); //output: Night Sky: The Moon, Sirius, The Milky Way
                     console.log(stars);// output: Sirius
+
+                    //scoping exercise 
+                    // var foo = 1;
+
+                    // (function() {
+                    //     console.log(foo);
+                    //     var foo = 2;
+                    //     var baz = 3;
+                    //     bar = 4;
+                    // } )();
+
+                    // console.log(foo);
+                    // console.log(bar);
+                    // console.log(baz);
+
+                    // return early function 
+
+                    function myFun() {
+                        console.log('hello');
+                        return 'world';
+                        console.log('byebye')
+                    }
+
+                    myFun();
     </script>
 </body>
 
