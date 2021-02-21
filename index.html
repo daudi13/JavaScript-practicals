@@ -539,7 +539,17 @@ If it doesn't find 'not' and 'bad' in the right sequence (or at all), just retur
                     // console.log(baz);
 
 
-                    function cookFood(time) {
+                    // function cookFood(time) {
+                    //     if (time === "afternoon") {
+                    //         return "cook now";
+                    //     } else {
+                    //         return "wait till meal time";
+                    //     }
+                    // }
+
+                    // console.log(cookFood("morning"));
+
+                    const cookFood = time => {
                         if (time === "afternoon") {
                             return "cook now";
                         } else {
@@ -547,7 +557,7 @@ If it doesn't find 'not' and 'bad' in the right sequence (or at all), just retur
                         }
                     }
 
-                    console.log(cookFood("morning"));
+                    console.log(cookFood('evening'));
     </script>
 </body>
 
