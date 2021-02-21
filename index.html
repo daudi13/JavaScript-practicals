@@ -538,15 +538,16 @@ If it doesn't find 'not' and 'bad' in the right sequence (or at all), just retur
                     // console.log(bar);
                     // console.log(baz);
 
-                    // return early function 
 
-                    function myFun() {
-                        console.log('hello');
-                        return 'world';
-                        console.log('byebye')
+                    function cookFood(time) {
+                        if (time === "afternoon") {
+                            return "cook now";
+                        } else {
+                            return "wait till meal time";
+                        }
                     }
 
-                    myFun();
+                    console.log(cookFood("morning"));
     </script>
 </body>
 
