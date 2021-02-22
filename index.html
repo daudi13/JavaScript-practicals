@@ -583,7 +583,17 @@ If it doesn't find 'not' and 'bad' in the right sequence (or at all), just retur
                             return firstName + " " +lastName;
                         }
 
-                        console.log(fullName('David', 'Ouma'))
+                        console.log(fullName('David', 'Ouma'));
+
+                        function square (x) {
+                            return (x * x);
+                        }
+
+                        function cube (x) {
+                            return(x * square(x))
+                        }
+
+                        console.log(cube(2));
 
     </script>
 </body>
